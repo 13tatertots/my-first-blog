@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Alix's blog</title>
+        <title>Django Girls blog</title>
     </head>
     <body>
-        <h1><p>Hi there!</p></h1>
-        <p>It works!</p>
+        <header>
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </header>
 
-{% for post in posts %}
-    <article>
-        <time>{{ post.published_date }}</time>
-        <h2><a href="">{{ post.title }}</a></h2>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </article>
-{% endfor %}
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
+            <h2><a href="">My first post</a></h2>
+            <p>Oh bother</p>
+        </article>
 
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
+            <h2><a href="">My second post</a></h2>
+            <p>Can't wait to be a hacker</p>
+        </article>
     </body>
 </html>
